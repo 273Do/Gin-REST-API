@@ -49,7 +49,7 @@ func BookAdd(c *gin.Context) {
 func BookList(c *gin.Context) {
 	// BookService構造体のインスタンスを作成
 	bookService := service.BookService{}
-	BookLists = bookService.GetBookList()
+	BookLists := bookService.GetBookList()
 
 	// gin.Hでjson形式のレスポンスを完結に記述
 	// jsでいうとjson({})に該当
